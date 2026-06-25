@@ -1,59 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Contact</title>
     <style>
         * {
-    margin: 0;
-    padding: 0;
-}
+            margin: 0;
+            padding: 0;
+        }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    /*background-color: rgb(46, 10, 80);*/
-    background-image: linear-gradient(to right, rgb(68, 5, 67), rgb(187, 54, 159));
-    color: rgb(243, 227, 227);
-    /*position: sticky;
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            /*background-color: rgb(46, 10, 80);*/
+            background-image: linear-gradient(to right, rgb(68, 5, 67), rgb(187, 54, 159));
+            color: rgb(243, 227, 227);
+            /*position: sticky;
     top: 0;*/
-}
+        }
 
-.logo {
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: "Edu NSW ACT Cursive", cursive;
+        body{
+            background-color: #f8e0fa;
+        }
 
-}
+        .logo {
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: "Edu NSW ACT Cursive", cursive;
 
-nav ul {
-    display: flex;
-    gap: 17px;
-    align-items: center;
-}
+        }
 
-nav ul li {
-    list-style-type: none;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: "Oswald", sans-serif;
-}
+        nav ul {
+            display: flex;
+            gap: 17px;
+            align-items: center;
+        }
 
-nav ul li a{
-    color: white;
-    text-decoration: none;
-}
+        nav ul li {
+            list-style-type: none;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: "Oswald", sans-serif;
+        }
 
-nav ul li a:hover{
-    color: rgb(237, 179, 237);
-    text-decoration: none;
-    transition: all 0.5s;
-}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: rgb(237, 179, 237);
+            text-decoration: none;
+            transition: all 0.5s;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 37px;
+        }
+
+        .social-icons a {
+            font-size: 50px;
+            color: #5e1e8b;
+            
+        }
+
+        .social-icons a:hover {
+            color: #8a2be2;
+        }
+
+        h1{
+            font-size: 35px;
+            margin-top: 15px;
+        }
+
+        h2{
+            font-weight: lighter;
+        }
+
+        .icon-box{
+            display: flex;
+            flex-direction: column ;
+            align-items: center;
+        }
+
+        .icon-box a{
+            color: #671b9d;
+            font-size: 50px;
+        }
+
+        .icon-box p{
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: 300;
+        }
+
+        .message{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form{
+            width: 400px;
+            margin: 40px auto;
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea{
+            padding: 20px;
+            border: 2px solid rgb(19, 2, 36);
+            border-radius: 8px;
+            font-size: 20px;
+            outline: none;
+            background-color: #dd9be2;
+            color: rgb(16, 0, 0);
+        }
+
+        .contact-form ::placeholder{
+            color: #290425;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus{
+            border-color: #4b0082;
+        }
+
+        .contact-form button{
+            padding: 8px;
+            width: 150px;
+            margin: 0 auto;
+            display: block;
+            background-color: #b441b0;
+            color: white;
+            border: 2px solid rgb(87, 9, 78);
+            border-radius: 8px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover{
+            background-color: #9b3ea1;
+        }
+
+        
 
     </style>
 </head>
+
 <body>
     <nav>
         <div class="logo">Aryan's Portfolio</div>
@@ -64,6 +167,30 @@ nav ul li a:hover{
             <li><a href="/contact.html">Contact</a></li>
         </ul>
     </nav>
-    Contact
+
+    <h1 style="text-align: center; font-family:'Times New Roman', Times, serif;">GET IN TOUCH</h1><br>
+    <h2 style="text-align: center; font-family:Arial, Helvetica, sans-serif; ">Feel free to contact me for collaborations,projects and opportunites</h2>
+    <div class="social-icons">
+        <div class="icon-box">
+            <a href="https://github.com/aryankudalkar77" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <p>Github</p>
+        </div>
+        <div class="icon-box">
+            <a href="https://lindein.com/Aryan Kudalkar"><i class="fa-brands fa-linkedin"></i></a>
+            <p>Linkedin</p>
+        </div>
+        <div class="icon-box">
+            <a href="mailto:aryankudalkar77@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <p>Email</p>
+        </div>
+    </div>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <textarea placeholder="Your message" rows="5"></textarea>
+        <button type="submit">Send</button>
+    </form>
 </body>
+
 </html>
