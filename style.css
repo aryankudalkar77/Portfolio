@@ -132,6 +132,11 @@ nav ul li a:hover{
     padding: 12px 0;
 }
 
+.project-link{
+    text-decoration: none;
+    color: aliceblue;
+}
+
 .row-reverse
 {
     flex-direction: row-reverse;
@@ -195,3 +200,4 @@ footer{
         padding: 15px 23px;
     }
 }
+

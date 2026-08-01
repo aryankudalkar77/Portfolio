@@ -176,7 +176,7 @@
             <p>Github</p>
         </div>
         <div class="icon-box">
-            <a href="https://lindein.com/Aryan Kudalkar"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/aryan-kudalkar-328397362/"><i class="fa-brands fa-linkedin"></i></a>
             <p>Linkedin</p>
         </div>
         <div class="icon-box">
@@ -185,12 +185,34 @@
         </div>
     </div>
 
-    <form class="contact-form">
-        <input type="text" placeholder="Your name" required>
-        <input type="email" placeholder="Your email" required>
-        <textarea placeholder="Your message" rows="5"></textarea>
-        <button type="submit">Send</button>
+    <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm">
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Your name"
+        required>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Your email"
+        required>
+
+    <textarea
+        id="message"
+        placeholder="Your message"
+        rows="5"
+        required></textarea>
+
+    <button type="submit">Send</button>
+
+</form>
     </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="contact.js"></script>
 </body>
 
 </html>

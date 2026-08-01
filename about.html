@@ -1,86 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESUME</title>
-    <style>
-         * {
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            padding: 10px 0;
-            /*background-color: rgb(46, 10, 80);*/
-            background-image: linear-gradient(to right, rgb(68, 5, 67), rgb(187, 54, 159));
-            color: rgb(243, 227, 227);
-            /*position: sticky;
-    top: 0;*/
-        }
-
-        .logo {
-            font-size: 20px;
-            font-weight: bolder;
-            font-family: "Edu NSW ACT Cursive", cursive;
-
-        }
-
-        nav ul {
-            display: flex;
-            gap: 17px;
-            align-items: center;
-        }
-
-        nav ul li {
-            list-style-type: none;
-            font-size: 18px;
-            font-weight: 400;
-            font-family: "Oswald", sans-serif;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        nav ul li a:hover {
-            color: rgb(237, 179, 237);
-            text-decoration: none;
-            transition: all 0.5s;
-        }
-
-        
-        
-        h1{
-            padding: 21px 5px;
-            /*background-color: rgb(186, 35, 176);*/
-            /*color: ;*/
-        }
-
-        h2{
-            padding: 8px 5px;
-        }
-
-        p{
-            padding-bottom: 10px;
-            padding-left: 5px;
-        }
-
-        ol, li{
-            list-style-type: decimal;
-            padding: 8px 5px;
-        }
-
-        
-    </style>
-</head>
-
-<body>
-    <nav>
+<link rel="stylesheet" href="about.css">
+<nav>
         <div class="logo">Aryan's Portfolio</div>
         <ul>
             <li><a href="./index.html">Home</a></li>
@@ -89,41 +8,116 @@
             <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
-    <h1>Aryan Rajendra Kudalkar</h1>
-    <hr>
-    <h2>Career Objective</h2>
-    <p>Always excited to explore the world of technology.Try to learn new skills with dedication and self-confidence.
-        Aspiring computer engineer with passion of growth and innovation. </p>
-    <hr>
-    <h2>Academic Project</h2>
-    <ol id="list">
-        <li><b>LIFEFLOW</b>(Blood Donation Management System)</li>
-        <li><b>Number game</b>(Random number guessing game)</li>
-    </ol>
-    <a href="https://github.com/AryanKudalkar" target="_main">Github Profile</a>
-    <hr>
-    <h2>Skills</h2>
-    <ul>
-        <li>Basic C programming concepts</li>
-        <li>Python Programming</li>
-        <li>Basic Java Programming</li>
-        <li>HTML,CSS,Javascript</li>
-    </ul>
-    <hr>
-    <h2><i><b>Educational Information</b></i></h2>
-    <ul>
-        <li>Qualified <b>SSC</b></li>
-        <li>Qualified <b>HSC IN SCIENCE</b></li>
-        <li>Aspiring <b>Computer Engineering</b></li>
-    </ul>
-    <hr>
-    <h2>Contact details</h2>
-    <p>Email: <i><b>aryan@gmail.com</b></i></p>
-    <p>Phone: <b>248284960</b></p>
-    <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin Profile</a>
 
+<body>   
+<section class="about">
+    <h1>About Me</h1>
+    
 
+    <p class="intro">
+        Hello! I'm <span>Aryan Rajendra Kudalkar</span>, a Computer Engineering
+        student passionate about web development. I enjoy building responsive,
+        interactive and user-friendly websites while continuously learning new
+        technologies and improving my problem-solving skills.
+    </p>
 
-</body>
+    <div class="about-grid">
 
-</html>
+        <div class="card">
+            <h2>🎯 Career Objective</h2>
+
+            <p>
+                To become a skilled Full Stack Developer by continuously
+                learning modern technologies, building practical projects,
+                and contributing to real-world software solutions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🎓 Education</h2>
+
+            <ul>
+                <li><strong>Computer Engineering</strong></li>
+                <li>K.C. College of Engineering</li>
+                <li>2024 - Present</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>💻 Technical Skills</h2>
+
+            <div class="skills">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>Git</span>
+                <span>GitHub</span>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+            <h2>🚀 Projects</h2>
+
+            <ul class="project-list">
+
+                <li>
+                    <strong>TaskFlow</strong><br>
+                    A Todo application with CRUD operations, filters and Local Storage.
+                </li>
+
+                <li>
+                    <strong>Deadline Ninja</strong><br>
+                    AI-powered task management application with smart prioritization.
+                </li>
+
+                <li>
+                    <strong>LifeFlow</strong><br>
+                    Blood Donation Management System.
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>📚 Currently Learning</h2>
+
+            <p>
+                Currently exploring backend development using
+                Node.js, Express.js and MongoDB while strengthening
+                my Full Stack Development skills.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>📞 Contact</h2>
+
+            <p>Email : yourmail@gmail.com</p>
+            <p>Phone : +91 XXXXX XXXXX</p>
+
+            <a href="https://github.com/aryankudalkar77" target="_blank">
+                GitHub Profile
+            </a>
+
+            <br><br>
+
+            <a href="https://www.linkedin.com/in/aryan-kudalkar-328397362/" target="_blank">
+                LinkedIn Profile
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+        Copyright &copy; 2026 | All rights Reserved
+    </footer>
+</body> 
